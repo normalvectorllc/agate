@@ -6,7 +6,7 @@ A standardized environment for conducting AI/ML coding interviews using the Kagg
 
 - **Standardized Assessment**: Structured prompts to evaluate candidates' skills in data exploration, statistical analysis, and model building
 - **Cross-Platform Compatibility**: Works seamlessly across macOS, Linux, and Windows
-- **Python Version Support**: Compatible with Python 3.9-3.13
+- **Python Version Support**: Compatible with Python 3.9-3.12
 - **Flexible Environment**: Supports both external Jupyter notebooks and VSCode's integrated notebook experience
 - **Essential Libraries**: Includes pandas, numpy, scikit-learn, tensorflow, pytorch, matplotlib, seaborn, and other common data science packages
 
@@ -90,8 +90,22 @@ agate/
 ├── notebooks/             # Jupyter notebooks
 │   ├── pokemon_assessment.ipynb  # Main assessment
 │   └── solutions/         # Reference solutions
+├── scripts/               # Utility scripts
+│   └── setup_env.py       # Environment setup script
 └── tests/                 # Test suite
 ```
+
+## Data Conventions
+
+The platform uses a consistent naming convention for dataset columns:
+
+- All column names are lowercase (e.g., `attack` instead of `Attack`)
+- Multi-word column names use underscores (e.g., `sp_attack` instead of `Sp. Atk`)
+- Type columns are named `type1` and `type2`
+- Stat columns include: `hp`, `attack`, `defense`, `sp_attack`, `sp_def`, `speed`
+- Other columns include: `weight_kg`, `height_m`, `is_legendary`, `generation`
+
+This convention makes the code more pythonic and easier to work with programmatically.
 
 ## Development
 
