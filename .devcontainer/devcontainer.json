@@ -44,7 +44,7 @@
       }
     }
   },
-  "postCreateCommand": "pip install virtualenv && python -m venv .venv && source .venv/bin/activate && pip install -e .",
+  "postCreateCommand": "pip install -e .",
   "postStartCommand": "echo 'Python environment setup complete. Virtual environment is activated by default.'",
   "remoteUser": "vscode"
 } 
