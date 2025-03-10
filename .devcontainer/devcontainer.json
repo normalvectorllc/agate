@@ -41,7 +41,7 @@
       }
     }
   },
-  "postCreateCommand": "python scripts/setup_env.py && . .venv/bin/activate && pip install ipywidgets matplotlib-inline nbconvert pytest-xdist plotly xgboost lightgbm catboost shap eli5",
+  "postCreateCommand": "pip install virtualenv && python -m venv .venv && source .venv/bin/activate",
   "postStartCommand": "echo 'Python environment setup complete. Virtual environment is activated by default.'",
   "postAttachCommand": {
     "updateVSCodeSettings": "echo '{\"python.defaultInterpreterPath\": \"/workspaces/$(basename ${containerWorkspaceFolder})/.venv/bin/python\"}' > .vscode/settings.json"
