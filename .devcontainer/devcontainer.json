@@ -23,8 +23,7 @@
         "ms-toolsai.jupyter-renderers",
         "ms-toolsai.vscode-jupyter-slideshow",
         "ms-vsliveshare.vsliveshare",
-        "ms-vsliveshare.vsliveshare-pack",
-        "ms-vsliveshare.vsliveshare-audio"
+        "GitHub.copilot"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
@@ -45,6 +44,6 @@
     }
   },
   "postCreateCommand": "pip install -e .",
-  "postStartCommand": "echo 'Python environment setup complete. Virtual environment is activated by default.'",
+  "postStartCommand": "echo 'Python environment setup complete.'",
   "remoteUser": "vscode"
 } 
